@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gpt-assistant-playground"
+version = "0.1.0"
+description = ""
+authors = ["Ahmed Shariff <shariff.mfa@outlook.com>"]
+readme = "README.md"
+packages = [{include = "gpt_assistant_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+loguru = "^0.7.2"
+openai = "^1.12.0"
+environs = "^10.3.0"
+
+[tool.poetry.scripts]
+gpta = "gpt_assistant_playground.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
